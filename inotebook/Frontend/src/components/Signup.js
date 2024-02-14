@@ -16,6 +16,10 @@ const Signup = (props) => {
     e.preventDefault();
 
     const {name,email,password,cpassword}=credentials;
+    if(password!==cpassword){
+      alert("y")
+    }
+
     const response = await fetch(`${host}/api/auth/createUsers`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       headers: {
@@ -92,7 +96,7 @@ const Signup = (props) => {
             Password
           </label>
           <input
-            type="cpassword"
+            type="password"
             className="form-control"
             value={credentials.cpassword}
             id="cpassword"
@@ -100,6 +104,9 @@ const Signup = (props) => {
             name="cpassword"
           />
         </div>
+        <div id="emailHelp" className="form-text">
+            Passwords Must be an exact match
+          </div>
         <button type="submit" className="btn btn-primary">
           Submit
         </button>

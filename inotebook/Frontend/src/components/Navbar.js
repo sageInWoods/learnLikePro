@@ -31,7 +31,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded-navbar">
         <div className="container-fluid">
           <Link className="circular-text" to="/">
-            GhostWriter
+            <i>Blog Your Day</i>
           </Link>
           <button
             className="navbar-toggler"

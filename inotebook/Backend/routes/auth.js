@@ -107,7 +107,7 @@ router.post(
       }
       const passwordCompare = await bcrypt.compare(password, user.password);
       if (!passwordCompare) {
-        success=false
+        success=false;
         return res.status(400).json({success, error: "incorrect credentials" });
       }
       const data = {

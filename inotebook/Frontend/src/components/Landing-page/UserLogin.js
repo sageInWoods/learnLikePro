@@ -9,7 +9,7 @@ const UserLogin = () => {
           <span>Register Yourself</span>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="username" />
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" />                                                                                                        
           <input type="text" placeholder="Gender" />
           {/* date of birth should not be more than todays's date */}
           <input type="text" placeholder="DOB" />
